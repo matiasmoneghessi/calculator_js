@@ -4,27 +4,55 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background: rgb(210, 210, 210)
 }
 
-.wrapper {
+.calculator {
     display: grid;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.wrapper > button {
+.calculator > button {
     cursor: pointer;
     font-size: larger;
+    outline: none;
     border: 1px solid grey;
     background-color: black;
     color: white;
 }
 
-.wrapper > button:hover {
-background-color: rgb(50, 50, 50);
+.calculator > button:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.spanTwo{
+    grid-column: span 2;
+}
+
+.output {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .75);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .prevOperation {
+color: rgb(255, 255, 255, .75);
+font-size: small;
+}
+
+.output .currentOperation {
+color: rgb(255, 255, 255, .75);
+font-size: larger;
 }
