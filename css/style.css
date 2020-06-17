@@ -1,0 +1,30 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+}
+
+body {
+    background: rgb(210, 210, 210)
+}
+
+.wrapper {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.wrapper > button {
+    cursor: pointer;
+    font-size: larger;
+    border: 1px solid grey;
+    background-color: black;
+    color: white;
+}
+
+.wrapper > button:hover {
+background-color: rgb(50, 50, 50);
+}
