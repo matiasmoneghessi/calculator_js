@@ -31,8 +31,14 @@ body {
     background-color: rgb(50, 50, 50);
 }
 
-.spanTwo{
+.spanTwoE{
     grid-column: span 2;
+}
+.spanTwoC{
+    grid-column: span 3;
+}
+.spanTwoP {
+    grid-row: span 2;
 }
 
 .output {
